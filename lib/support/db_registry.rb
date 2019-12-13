@@ -1,4 +1,4 @@
-require_relative "./connection_adapter.rb"
+ require_relative "./connection_adapter.rb"
 
 DBRegistry ||= OpenStruct.new(test: ConnectionAdapter.new("db/#{DBNAME}-test.db"), 
   development: ConnectionAdapter.new("db/#{DBNAME}-development.db"), 
