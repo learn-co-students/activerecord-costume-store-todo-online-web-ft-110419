@@ -128,7 +128,7 @@ The above code would create a table called `dogs` with three columns: `name`,
 `breed` (both explicitly created), and an implicitly created `id` column.
 
 Take a look at a few data types that Active Record supports below:
-
+#!
 |Data Type                      |Examples                                               |
 |-------------------------------|-------------------------------------------------------|
 |boolean                        | true, false                                           |
@@ -274,7 +274,7 @@ such as `build` and `save`.
 
 You will only be altering code in six files, the three files in the `models`
 folder and the three files in the `db/migrations` folder.
-
+#!
 ```text
 ├── app
 │   └── models
@@ -311,7 +311,7 @@ existing migration, **you will need to rollback your previous migrations for
 that table using the rake command `rake db:rollback`**. Otherwise, the schema
 will remain unchanged and the changes you make to your migrations will not
 be seen.
-
+#!
 For example, say you've run `rake db:migrate` and `learn` once to start, and see
 that you need to add an attribute to the `costume_stores` table. Since this
 table is the second migration of three, you will need to run `rake db:rollback`
